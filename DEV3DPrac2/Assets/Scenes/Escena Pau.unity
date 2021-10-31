@@ -171,9 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherPortal: {fileID: 1846882078}
-  playerCamera: {fileID: 963194227}
+  playerCameraTransform: {fileID: 963194228}
   virtualPortal: {fileID: 2078649904}
   portalCamera: {fileID: 1863997622}
+  nearClipOffset: 0
 --- !u!1 &423422194
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,9 +910,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherPortal: {fileID: 325422535}
-  playerCamera: {fileID: 963194227}
+  playerCameraTransform: {fileID: 963194228}
   virtualPortal: {fileID: 728017564}
   portalCamera: {fileID: 423422195}
+  nearClipOffset: 0
 --- !u!1 &1863997621
 GameObject:
   m_ObjectHideFlags: 0
