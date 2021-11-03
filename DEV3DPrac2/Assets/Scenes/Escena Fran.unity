@@ -784,7 +784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 362660173}
   attachPosition: {fileID: 873883792}
-  moveSpeed: 0
+  moveSpeed: 10
+  throwForce: 1000
 --- !u!1 &1556893611
 GameObject:
   m_ObjectHideFlags: 0
