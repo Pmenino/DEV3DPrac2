@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PortalCamera : MonoBehaviour
 {
-    [SerializeField] private PortalCamera otherPortal;
-    [SerializeField] private Transform playerCameraTransform;
-    [SerializeField] private Transform virtualPortal;
-    [SerializeField] private Transform portalCamera;
+    [SerializeField] public PortalCamera otherPortal;
+    [SerializeField] public Transform playerCameraTransform;
+    [SerializeField] public Transform virtualPortal;
+    [SerializeField] public Transform portalCamera;
 
     [SerializeField] private float nearClipOffset;
 

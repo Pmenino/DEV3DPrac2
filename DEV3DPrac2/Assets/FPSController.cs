@@ -61,6 +61,16 @@ public class FPSController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; //Bloquea raton en sitio
         Cursor.visible = false; //Hace raton invisible
         mJump = false; //Variante de salto en falso
+        recalculateYawAndPitch();
+    }
+
+    
+
+    public void recalculateYawAndPitch()
+    {
+        mPitch = mPitchController.transform.localRotation.eulerAngles.x;
+        if (mPitch > 180) mPitch -= 360;
+        mYaw = transform.rotation.eulerAngles.y;
     }
     private void OnEnable()
     {
