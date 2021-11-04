@@ -88,7 +88,8 @@ public class GravityGun__ : MonoBehaviour
 
     private void updateTaken()
     {
-
+        takenObject.transform.position = attachPosition.position;
+        takenObject.transform.rotation = attachPosition.rotation;
     }
 
     private void detachObject(float force)
