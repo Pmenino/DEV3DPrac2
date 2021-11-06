@@ -10,6 +10,8 @@ public class Teleportable : MonoBehaviour
     private bool isTeleporting = false;
     private Vector3 teleportPosition;
     private Vector3 teleportForward;
+    [SerializeField] Rigidbody cubeRb;
+    [SerializeField] float throwForce;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.TryGetComponent(out PortalCamera portal) && !isTeleporting)
@@ -42,6 +44,10 @@ public class Teleportable : MonoBehaviour
             if (TryGetComponent(out CharacterController characterController))
             {
                 characterController.enabled = true;
+            }
+            if(gameObject.tag == "Cube")
+            {
+                cubeRb.AddForce(gameObject.transform.forward * throwForce);
             }
         }
     }

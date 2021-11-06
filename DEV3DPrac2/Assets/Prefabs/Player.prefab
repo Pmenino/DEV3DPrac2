@@ -409,6 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportOffset: 1.5
+  cubeRb: {fileID: 639627137206944357, guid: 2afc8cf0b43c9aa489b56fdf5056e57b, type: 3}
+  throwForce: 800
 --- !u!114 &1859471437171350418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +426,7 @@ MonoBehaviour:
   cam: {fileID: 2837231891495811121}
   attachPosition: {fileID: 3716560267140695}
   moveSpeed: 10
-  throwForce: 1000
+  throwForce: 400
 --- !u!1 &8402095489991343235
 GameObject:
   m_ObjectHideFlags: 0
