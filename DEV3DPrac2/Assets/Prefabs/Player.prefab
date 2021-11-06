@@ -355,7 +355,7 @@ MonoBehaviour:
   mJumpKey: 32
   mRunKey: 304
   mRunMultiplier: 2
-  mMaxHeight: 2
+  mMaxHeight: 1.5
   mLateralDistance: 5
 --- !u!143 &8457758348782388557
 CharacterController:
