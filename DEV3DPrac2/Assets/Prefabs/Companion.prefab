@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ee2c66ac0929f4889f65160afb40ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: 3
+  teleportOffset: 1.5
 --- !u!1 &587372210136956789
 GameObject:
   m_ObjectHideFlags: 0

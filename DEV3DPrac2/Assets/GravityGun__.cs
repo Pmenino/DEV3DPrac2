@@ -20,14 +20,15 @@ public class GravityGun__ : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(2))
+        if(Input.GetMouseButtonDown(0))
         {
             Debug.Log("GravityShoot");
             takenObject = gravityShoot();
+
         }
         if (takenObject != null)
         {
-            if (Input.GetMouseButton(2) && takenObject != null)
+            if (Input.GetMouseButton(0) && takenObject != null)
             {
                 takenObject.isKinematic = true;
                 switch (currentStatus)
@@ -39,7 +40,7 @@ public class GravityGun__ : MonoBehaviour
                         updateTaken();
                         break;
                 }
-                if(Input.GetKeyDown(KeyCode.T))
+                if(Input.GetMouseButtonDown(1))
                 {
                     detachObject(throwForce);
                 }
