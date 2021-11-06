@@ -12,8 +12,7 @@ public class PortalGun : MonoBehaviour
     private bool isActive;
     [SerializeField] private GameObject bluePortal;
     [SerializeField] private GameObject orangePortal;
-
-
+    [SerializeField] private float resizeSpeed;
     void Update()
     {
         if(Input.GetMouseButton(0) || Input.GetMouseButton(1))
@@ -22,6 +21,18 @@ public class PortalGun : MonoBehaviour
         }
 
         previewPortal.SetActive(isActive);
+
+        if(Input.GetAxis("Mouse ScrollWheel") > 0f && isActive)
+        {
+            previewPortal.transform.localScale = Vector3.Lerp(previewPortal.transform.localScale, 
+                new Vector3(previewPortal.transform.localScale.x * 2, previewPortal.transform.localScale.y * 2, previewPortal.transform.localScale.z), Time.deltaTime * resizeSpeed);
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f && isActive)
+        {
+            previewPortal.transform.localScale = Vector3.Lerp(previewPortal.transform.localScale,
+                new Vector3(previewPortal.transform.localScale.x / 2, previewPortal.transform.localScale.y / 2, previewPortal.transform.localScale.z), Time.deltaTime * resizeSpeed);
+        }
 
         if (Input.GetMouseButtonUp(0) && isActive)
         {

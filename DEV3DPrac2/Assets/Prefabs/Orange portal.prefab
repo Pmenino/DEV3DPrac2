@@ -222,7 +222,7 @@ MonoBehaviour:
   playerCameraTransform: {fileID: 0}
   virtualPortal: {fileID: 4517720131446160115}
   portalCamera: {fileID: 2461712711878771653}
-  nearClipOffset: 0
+  nearClipOffset: 0.4
 --- !u!65 &2461712712373979845
 BoxCollider:
   m_ObjectHideFlags: 0
