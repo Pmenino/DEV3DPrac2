@@ -20,7 +20,7 @@ public class PortalCamera : MonoBehaviour
 
         otherPortal.portalCamera.GetComponent<Camera>().nearClipPlane = playerDist + nearClipOffset;
 
-        otherPortal.portalCamera.GetComponent<Camera>().fieldOfView = 60 * playerDist;
+        //otherPortal.portalCamera.GetComponent<Camera>().fieldOfView = 60 * playerDist;
 
         Vector3 local_direction = virtualPortal.InverseTransformDirection(playerCameraTransform.forward);
         otherPortal.portalCamera.forward = otherPortal.transform.TransformDirection(local_direction);

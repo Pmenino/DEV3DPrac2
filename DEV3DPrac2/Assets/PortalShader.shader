@@ -10,7 +10,7 @@ Shader "Tecnocampus/PortalShader"
         {
             Tags{ "IgnoreProjector" = "True" "RenderType" = "Opaque" }
             Lighting Off
-            Cull Back
+            Cull Off
             ZWrite On
             ZTest Less
 

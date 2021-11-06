@@ -12,7 +12,7 @@ public class Teleportable : MonoBehaviour
     private Vector3 teleportForward;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent(out PortalCamera portal))
+        if(other.gameObject.TryGetComponent(out PortalCamera portal) && !isTeleporting)
         {
             isTeleporting = true;
             Vector3 l_position = portal.virtualPortal.InverseTransformPoint(transform.position);
