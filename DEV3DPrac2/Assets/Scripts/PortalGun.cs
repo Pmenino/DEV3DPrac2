@@ -13,6 +13,12 @@ public class PortalGun : MonoBehaviour
     [SerializeField] private GameObject bluePortal;
     [SerializeField] private GameObject orangePortal;
     [SerializeField] private float resizeSpeed;
+    [SerializeField] private Animation anim;
+
+    [Header("Audio")]
+    public AudioClip shootPortal;
+
+    public AudioSource audioSource;
     void Update()
     {
         if(Input.GetMouseButton(0) || Input.GetMouseButton(1))
@@ -40,6 +46,9 @@ public class PortalGun : MonoBehaviour
             bluePortal.transform.position = previewPortal.transform.position;
             bluePortal.transform.forward = previewPortal.transform.forward;
             previewPortal.SetActive(false);
+
+            audioSource.GetComponent<AudioSource>().clip = shootPortal;
+            audioSource.Play();
         }
         if (Input.GetMouseButtonUp(1) && isActive)
         {
@@ -47,6 +56,9 @@ public class PortalGun : MonoBehaviour
             orangePortal.transform.position = previewPortal.transform.position;
             orangePortal.transform.forward = previewPortal.transform.forward;
             previewPortal.SetActive(false);
+
+            audioSource.GetComponent<AudioSource>().clip = shootPortal;
+            audioSource.Play();
         }
     }
 

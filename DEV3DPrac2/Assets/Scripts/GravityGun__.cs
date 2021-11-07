@@ -18,6 +18,11 @@ public class GravityGun__ : MonoBehaviour
 
     [SerializeField] private float throwForce = 1000;
 
+    [Header("Audio")]
+    public AudioClip gravityThrow;
+
+    public AudioSource audioSource;
+
     void Update()
     {
         if(Input.GetMouseButtonDown(2))
@@ -41,6 +46,8 @@ public class GravityGun__ : MonoBehaviour
                 if(Input.GetKeyDown(KeyCode.T))
                 {
                     detachObject(throwForce);
+                    audioSource.GetComponent<AudioSource>().clip = gravityThrow;
+                    audioSource.Play();
                 }
 
             }

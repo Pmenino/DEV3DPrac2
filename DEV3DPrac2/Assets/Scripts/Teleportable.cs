@@ -12,6 +12,11 @@ public class Teleportable : MonoBehaviour
     private Vector3 teleportForward;
     [SerializeField] Rigidbody cubeRb;
     [SerializeField] float throwForce;
+
+    [Header("Audio")]
+    public AudioClip teleport;
+
+    public AudioSource audioSource;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.TryGetComponent(out PortalCamera portal) && !isTeleporting)
@@ -22,7 +27,9 @@ public class Teleportable : MonoBehaviour
 
             teleportForward = portal.otherPortal.transform.TransformDirection(l_direction);
             teleportPosition = portal.otherPortal.transform.TransformPoint(l_position) + portal.otherPortal.transform.forward * teleportOffset;
-            
+
+            audioSource.GetComponent<AudioSource>().clip = teleport;
+            audioSource.Play();
         }
     }
 
