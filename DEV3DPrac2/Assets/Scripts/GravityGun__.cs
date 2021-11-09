@@ -63,11 +63,12 @@ public class GravityGun__ : MonoBehaviour
         if(Physics.Raycast(
             cam.ViewportPointToRay(
             new Vector3(0.5f, 0.5f)),
-            out RaycastHit hit, 200.0f)) 
+            out RaycastHit hit, 5.0f)) 
         {
             Rigidbody rb = hit.rigidbody;
             if(rb == null)
             {
+                Debug.Log("No llego");
                 return null;
             }
             rb.isKinematic = true;
