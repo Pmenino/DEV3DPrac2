@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PortalGun : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PortalGun : MonoBehaviour
     [SerializeField] private GameObject orangePortal;
     [SerializeField] private float resizeSpeed;
     [SerializeField] private Animation anim;
+    [SerializeField] private UnityEvent<string> updateUI;
 
     [Header("Audio")]
     public AudioClip shootPortal;
@@ -45,6 +47,7 @@ public class PortalGun : MonoBehaviour
             bluePortal.SetActive(true);
             bluePortal.transform.position = previewPortal.transform.position;
             bluePortal.transform.forward = previewPortal.transform.forward;
+            updateUI.Invoke("blue");
             previewPortal.SetActive(false);
 
             audioSource.GetComponent<AudioSource>().clip = shootPortal;
@@ -55,6 +58,7 @@ public class PortalGun : MonoBehaviour
             orangePortal.SetActive(true);
             orangePortal.transform.position = previewPortal.transform.position;
             orangePortal.transform.forward = previewPortal.transform.forward;
+            updateUI.Invoke("orange");
             previewPortal.SetActive(false);
 
             audioSource.GetComponent<AudioSource>().clip = shootPortal;
