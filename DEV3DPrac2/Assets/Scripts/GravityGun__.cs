@@ -72,6 +72,10 @@ public class GravityGun__ : MonoBehaviour
                 return null;
             }
             rb.isKinematic = true;
+            if(rb.gameObject.TryGetComponent(out Teleportable tp))
+            {
+                tp.isActive= false;
+            }
             initialPosition = rb.transform.position;
             initialRotation = rb.transform.rotation;
             currentStatus = Status.taking;
@@ -101,6 +105,11 @@ public class GravityGun__ : MonoBehaviour
 
     private void detachObject(float force)
     {
+        if (takenObject.gameObject.TryGetComponent(out Teleportable tp))
+        {
+            tp.isActive = false;
+        }
+
         takenObject.isKinematic = false;
         takenObject.AddForce(attachPosition.forward * force);
         takenObject = null;

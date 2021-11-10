@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ee2c66ac0929f4889f65160afb40ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: 2
+  teleportOffset: 1.5
   cubeRb: {fileID: 639627137206944357}
   throwForce: 800
   teleport: {fileID: 8300000, guid: 5c0bf49ac0dea4247addf09a2d3452d6, type: 3}
