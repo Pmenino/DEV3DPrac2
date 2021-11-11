@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Teleportable : MonoBehaviour
 {
-    public bool isActive = true;
     [SerializeField] private float teleportOffset;
 
     private bool isTeleporting = false;
@@ -19,7 +18,7 @@ public class Teleportable : MonoBehaviour
     public AudioSource audioSource;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent(out PortalCamera portal) && !isTeleporting && isActive)
+        if(other.gameObject.TryGetComponent(out PortalCamera portal) && !isTeleporting)
         {
             isTeleporting = true;
             Vector3 l_position = portal.virtualPortal.InverseTransformPoint(transform.position);
@@ -32,7 +31,7 @@ public class Teleportable : MonoBehaviour
             audioSource.Play();
         }
 
-        if(TryGetComponent(out Rigidbody rb))
+        /*if(TryGetComponent(out Rigidbody rb))
         {
             Vector3 l_Velocity =
             portal.virtualPortal.transform.InverseTransformDirection(rb.velocity);
@@ -40,7 +39,7 @@ public class Teleportable : MonoBehaviour
             portal.otherPortal.transform.TransformDirection(l_Velocity);
             transform.localScale *=
             (portal.otherPortal.transform.localScale.x / portal.transform.localScale.x);
-        }
+        }*/
     }
 
     private void LateUpdate()

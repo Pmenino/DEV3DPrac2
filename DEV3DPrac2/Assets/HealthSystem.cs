@@ -12,12 +12,12 @@ public class HealthSystem : MonoBehaviour
         health -= value;
         if (health <= 0.0f)
         {
-            Destroy(gameObject);
+            kill();
         }
     }
 
     public void kill()
     {
-        health = 0;
+        Destroy(gameObject);
     }
 }
