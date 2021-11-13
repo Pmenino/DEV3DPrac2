@@ -30,6 +30,8 @@ public class TurretLaser : MonoBehaviour
                 laserRenderer.SetPosition(1, Vector3.forward * hitInfo.distance);
                 hitInfo.transform.gameObject.TryGetComponent(out TurretLaser tl);
 
+                Debug.Log(hitInfo.transform.gameObject);
+
                 if(lastestTurret != null && tl == null)
                 {
                     lastestTurret.updateState(false);
@@ -38,7 +40,11 @@ public class TurretLaser : MonoBehaviour
                 {
                     hs.kill();
                 }
-                if(tl)
+                if (hitInfo.transform.gameObject.TryGetComponent(out TurretAngleDetector tad))
+                {
+                    Destroy(tad.gameObject);
+                }
+                if (tl)
                 {
                     lastestTurret = tl;
                     tl.updateState(true);

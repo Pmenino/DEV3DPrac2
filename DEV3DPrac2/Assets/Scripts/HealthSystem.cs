@@ -11,6 +11,7 @@ public class HealthSystem : MonoBehaviour
     public AudioClip death;
 
     public AudioSource audioSource;
+    public bool dead = false;
     public void takeDamage(float value)
     {
         health -= value;
@@ -21,9 +22,13 @@ public class HealthSystem : MonoBehaviour
     }
     public void kill()
     {
-        Respawn();
-        audioSource.clip = death;
-        audioSource.Play();
+        if (!dead)
+        {
+            dead = true;
+            Respawn();
+            audioSource.clip = death;
+            audioSource.Play();
+        }
     }
 
     private void Respawn()

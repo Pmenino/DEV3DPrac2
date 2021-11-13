@@ -13,7 +13,6 @@ public class TurretAngleDetector : MonoBehaviour
     void Update()
     {
         float angle = Vector3.Angle(transform.up, Vector3.up);
-        //Debug.Log("ANGLE: " + angle);
 
         if(isActive && angle > maxAngle)
         {

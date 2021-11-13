@@ -31,7 +31,7 @@ public class Teleportable : MonoBehaviour
             audioSource.Play();
         }
 
-        if(TryGetComponent(out Rigidbody rb))
+        if(TryGetComponent(out Rigidbody rb) && other.gameObject.tag == "portal")
         {
             Vector3 l_Velocity =
             portal.virtualPortal.transform.InverseTransformDirection(rb.velocity);

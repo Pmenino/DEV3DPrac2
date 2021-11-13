@@ -21,6 +21,7 @@ public class GameOverManager : MonoBehaviour
     }
     public void Respawn()
     {
+        player.GetComponent<HealthSystem>().dead = false;
         player.SetActive(false);
         Transform waypoint = gameMaster.ReturnWaypoint();
         player.transform.position = new Vector3(waypoint.transform.position.x, waypoint.transform.position.y, waypoint.transform.position.z);
