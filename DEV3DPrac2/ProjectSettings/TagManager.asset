@@ -6,6 +6,7 @@ TagManager:
   tags:
   - portal_enable
   - Cube
+  - Turret
   layers:
   - Default
   - TransparentFX

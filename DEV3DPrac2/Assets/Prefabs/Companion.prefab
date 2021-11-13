@@ -2225,7 +2225,6 @@ GameObject:
   - component: {fileID: 633183183986077911}
   - component: {fileID: 6514738906810376040}
   - component: {fileID: -2493226573814914330}
-  - component: {fileID: 97138420768429183}
   m_Layer: 0
   m_Name: Companion
   m_TagString: Cube
@@ -2440,19 +2439,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &97138420768429183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587353351418226623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d541b2d421505f94786e3e7d9c03fc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &587372210136956789
 GameObject:
   m_ObjectHideFlags: 0
