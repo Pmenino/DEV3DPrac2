@@ -36,10 +36,6 @@ public class PreviewPortal : MonoBehaviour
             else{
                 return false;
             }
-
-            //if !portal_enabled -> return false
-            //if angle(normal, lastNormal) > angleThreshold -> return false;
-            //if fist(controlPoint, rayCastPoint) > distThreshold -> return false;
         }
         return true;
         

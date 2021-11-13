@@ -31,7 +31,7 @@ public class Teleportable : MonoBehaviour
             audioSource.Play();
         }
 
-        /*if(TryGetComponent(out Rigidbody rb))
+        if(TryGetComponent(out Rigidbody rb))
         {
             Vector3 l_Velocity =
             portal.virtualPortal.transform.InverseTransformDirection(rb.velocity);
@@ -39,7 +39,7 @@ public class Teleportable : MonoBehaviour
             portal.otherPortal.transform.TransformDirection(l_Velocity);
             transform.localScale *=
             (portal.otherPortal.transform.localScale.x / portal.transform.localScale.x);
-        }*/
+        }
     }
 
     private void LateUpdate()

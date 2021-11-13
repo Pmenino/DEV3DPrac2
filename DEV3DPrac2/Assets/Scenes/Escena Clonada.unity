@@ -947,8 +947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30df99f01efd9dc409fbb175457ae6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraA: {fileID: 2118811084}
-  cameraB: {fileID: 1570360121}
+  cameraA: {fileID: 1596995685}
+  cameraB: {fileID: 1132970283}
   cameraMatA: {fileID: 2100000, guid: c26acf1fd049c234698609059731d5cc, type: 2}
   cameraMatB: {fileID: 2100000, guid: aed93608b95ef3245bb134783cc38cc0, type: 2}
 --- !u!4 &422571908
@@ -1111,6 +1111,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1119499331427220945, guid: d9cc7daba741ee6478f4cb06c0db29d0, type: 3}
   m_PrefabInstance: {fileID: 1917910818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &577966004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2555384427528422546, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+  m_PrefabInstance: {fileID: 2118811081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577966006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2555384427528422547, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+  m_PrefabInstance: {fileID: 2118811081}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577966004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f601f2e7a93e324cb2cf7fa70b41069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &628048265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2045,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6581487837352815781, guid: 93b305776a401444aa189daff595522d, type: 3}
   m_PrefabInstance: {fileID: 1670157567}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1132970283 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2555384427528422548, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+  m_PrefabInstance: {fileID: 2118811081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1178600075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2436,6 +2457,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1119499331427220945, guid: d9cc7daba741ee6478f4cb06c0db29d0, type: 3}
   m_PrefabInstance: {fileID: 2078421650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1432966458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8296897865132055964, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+  m_PrefabInstance: {fileID: 1570360118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1432966460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8296897865132055955, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+  m_PrefabInstance: {fileID: 1570360118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432966458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f601f2e7a93e324cb2cf7fa70b41069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1436568737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2706,34 +2743,25 @@ PrefabInstance:
     - target: {fileID: 8141719301863523819, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
       propertyPath: otherPortal
       value: 
-      objectReference: {fileID: 2118811083}
+      objectReference: {fileID: 0}
     - target: {fileID: 8141719301863523819, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
       propertyPath: playerCameraTransform
       value: 
       objectReference: {fileID: 164591281}
+    - target: {fileID: 8296897865132055955, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 577966006}
+    - target: {fileID: 8296897865132055955, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+      propertyPath: playerCameraTransform
+      value: 
+      objectReference: {fileID: 164591281}
+    - target: {fileID: 8296897865132055966, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
---- !u!114 &1570360119 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8141719301863523819, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
-  m_PrefabInstance: {fileID: 1570360118}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570360120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f601f2e7a93e324cb2cf7fa70b41069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1570360120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4924087328201673076, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
-  m_PrefabInstance: {fileID: 1570360118}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1570360121 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4924087328135060068, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
-  m_PrefabInstance: {fileID: 1570360118}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575784632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2839,6 +2867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b305776a401444aa189daff595522d, type: 3}
+--- !u!20 &1596995685 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8296897865132055965, guid: 0c50418484c1b7740bfa3023e386976d, type: 3}
+  m_PrefabInstance: {fileID: 1570360118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1620310732
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,7 +3713,7 @@ PrefabInstance:
     - target: {fileID: 2461712712373979846, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
       propertyPath: otherPortal
       value: 
-      objectReference: {fileID: 1570360119}
+      objectReference: {fileID: 0}
     - target: {fileID: 2461712712373979846, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
       propertyPath: playerCameraTransform
       value: 
@@ -3689,29 +3722,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange portal
       objectReference: {fileID: 0}
+    - target: {fileID: 2555384427528422547, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 1432966460}
+    - target: {fileID: 2555384427528422547, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+      propertyPath: playerCameraTransform
+      value: 
+      objectReference: {fileID: 164591281}
+    - target: {fileID: 2555384427528422549, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
---- !u!1 &2118811082 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2461712712373979899, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
-  m_PrefabInstance: {fileID: 2118811081}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2118811083 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2461712712373979846, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
-  m_PrefabInstance: {fileID: 2118811081}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118811082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f601f2e7a93e324cb2cf7fa70b41069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!20 &2118811084 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2461712711878771655, guid: b4aaae3a79a793446ad6903d62dca321, type: 3}
-  m_PrefabInstance: {fileID: 2118811081}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &432788602794369682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3917,11 +3941,11 @@ PrefabInstance:
     - target: {fileID: 3931250454326224970, guid: 248c34dd3202ad84dbae0b02aa7335ea, type: 3}
       propertyPath: bluePortal
       value: 
-      objectReference: {fileID: 1570360120}
+      objectReference: {fileID: 1432966458}
     - target: {fileID: 3931250454326224970, guid: 248c34dd3202ad84dbae0b02aa7335ea, type: 3}
       propertyPath: orangePortal
       value: 
-      objectReference: {fileID: 2118811082}
+      objectReference: {fileID: 577966004}
     - target: {fileID: 3931250454326224970, guid: 248c34dd3202ad84dbae0b02aa7335ea, type: 3}
       propertyPath: previewPortal
       value: 
