@@ -258,5 +258,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   scenarioTag: portal_enable
+  portalTag: portal
   maxNormalAngle: 20
   maxDistance: 2

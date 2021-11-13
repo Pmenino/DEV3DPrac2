@@ -7,6 +7,7 @@ public class PreviewPortal : MonoBehaviour
     [SerializeField] private List<Transform> controlPoints;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private string scenarioTag;
+    [SerializeField] private string portalTag;
     [SerializeField] private float maxNormalAngle;
     [SerializeField] private float maxDistance;
    public bool isValidPosition(Camera mainCamera)
@@ -16,6 +17,10 @@ public class PreviewPortal : MonoBehaviour
             if(Physics.Raycast(mainCamera.transform.position, point.position - mainCamera.transform.position, out RaycastHit hitInfo, float.MaxValue, layerMask)){
 
                 if (!hitInfo.transform.gameObject.CompareTag(scenarioTag))
+                {
+                    return false;
+                }
+                if (hitInfo.transform.gameObject.CompareTag(portalTag))
                 {
                     return false;
                 }

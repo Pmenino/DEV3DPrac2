@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2461712711696276469}
   - component: {fileID: 2461712711696276468}
   - component: {fileID: 2461712711696276459}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2461712711878771653}
   - component: {fileID: 2461712711878771655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,13 +181,13 @@ GameObject:
   - component: {fileID: 2461712712373979844}
   - component: {fileID: 2461712712373979846}
   - component: {fileID: 2461712712373979845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Orange portal
-  m_TagString: Untagged
+  m_TagString: portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2461712712373979844
 Transform:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4517720131446160115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Virtual portal 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 2461712712667055709}
   - component: {fileID: 2461712712667055708}
   - component: {fileID: 2461712712667055699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Render
   m_TagString: Untagged
   m_Icon: {fileID: 0}

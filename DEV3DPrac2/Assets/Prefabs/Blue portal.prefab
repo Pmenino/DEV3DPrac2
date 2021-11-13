@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4924087328135060070}
   - component: {fileID: 4924087328135060068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,13 +85,13 @@ GameObject:
   - component: {fileID: 4924087328201673082}
   - component: {fileID: 8141719301863523819}
   - component: {fileID: 4924087328201673083}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blue portal
-  m_TagString: Untagged
+  m_TagString: portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4924087328201673082
 Transform:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4924087328626219504}
   - component: {fileID: 4924087328626219505}
   - component: {fileID: 4924087328626219506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Render
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 4924087328994487043}
   - component: {fileID: 4924087328994487068}
   - component: {fileID: 4924087328994487069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8141719301863523818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Virtual portal 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

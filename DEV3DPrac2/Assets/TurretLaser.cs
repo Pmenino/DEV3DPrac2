@@ -5,9 +5,15 @@ using UnityEngine;
 public class TurretLaser : MonoBehaviour
 {
     [SerializeField] LineRenderer laserRenderer;
-    [SerializeField] private bool isActive = true;
+    [SerializeField] private bool isActive;
     [SerializeField] private float maxLaserDistance;
     [SerializeField] private LayerMask layermask;
+    private TurretLaser lastestTurret;
+
+    private void Start()
+    {
+        laserRenderer.enabled = isActive;
+    }
     public void updateState(bool isActive)
     {
         laserRenderer.enabled = isActive;
@@ -24,24 +30,27 @@ public class TurretLaser : MonoBehaviour
                 laserRenderer.SetPosition(1, Vector3.forward * hitInfo.distance);
                 hitInfo.transform.gameObject.TryGetComponent(out TurretLaser tl);
 
+                if(lastestTurret != null && tl == null)
+                {
+                    lastestTurret.updateState(false);
+                }
                 if (hitInfo.transform.gameObject.TryGetComponent(out HealthSystem hs))
                 {
                     hs.kill();
                 }
                 if(tl)
                 {
+                    lastestTurret = tl;
                     tl.updateState(true);
                 }
+                
                 
             }
             else
             {
                 laserRenderer.SetPosition(1, Vector3.forward * maxLaserDistance);
             }
-            //if hit
-            //laserrenderer 2nd point to hit disttance
-            //else
-            //laser renderer 2nd point to infinite distance
+
         }
     }
 }
