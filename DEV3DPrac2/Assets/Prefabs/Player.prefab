@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1618843494}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,6 +504,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gameOverManager: {fileID: 0}
+  death: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &3931250454836414057
 GameObject:
   m_ObjectHideFlags: 0

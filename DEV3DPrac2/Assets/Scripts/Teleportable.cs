@@ -61,10 +61,6 @@ public class Teleportable : MonoBehaviour
             {
                 characterController.enabled = true;
             }
-            if(gameObject.tag == "Cube")
-            {
-                cubeRb.AddForce(gameObject.transform.forward * throwForce);
-            }
         }
     }
 }

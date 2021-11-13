@@ -6,7 +6,11 @@ public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private float health = 100;
     [SerializeField] private GameOverManager gameOverManager;
-    // Start is called before the first frame update
+
+    [Header("Audio")]
+    public AudioClip death;
+
+    public AudioSource audioSource;
     public void takeDamage(float value)
     {
         health -= value;
@@ -18,6 +22,8 @@ public class HealthSystem : MonoBehaviour
     public void kill()
     {
         Respawn();
+        audioSource.clip = death;
+        audioSource.Play();
     }
 
     private void Respawn()
